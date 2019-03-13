@@ -1102,6 +1102,7 @@ button:focus{
 }
 
 
+
 @media only screen and (min-width: 576px) and (max-width: 991px){
   #who{
     .up{
@@ -1177,6 +1178,14 @@ button:focus{
     }
     .text_area{
       padding: 0;
+      h2{
+        text-align: center;
+        font-size: 30px;
+        &::after{
+          width: 20%;
+          left: 40%;
+        }
+      }
       p{
         padding-top: 10px;
         text-align: justify;
