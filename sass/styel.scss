@@ -331,7 +331,8 @@ button:focus{
           }
         }
         .image_area{
-          animation-name: floating_email;
+          -webkit-animation-name: floating_email;
+                  animation-name: floating_email;
         }
       }
       .social_media{
@@ -356,7 +357,8 @@ button:focus{
           }
         }
         .image_area{
-          animation-name: floating_social;
+          -webkit-animation-name: floating_social;
+                  animation-name: floating_social;
         }
       }
       .video_marketing{
@@ -378,7 +380,8 @@ button:focus{
           }
         }
         .image_area{
-          animation-name: floating_video;
+          -webkit-animation-name: floating_video;
+                  animation-name: floating_video;
         }
       }
 
@@ -401,7 +404,8 @@ button:focus{
           }
         }
         .image_area{
-          animation-name: floating_seo;
+          -webkit-animation-name: floating_seo;
+                  animation-name: floating_seo;
         }
       }
       .web{
@@ -424,7 +428,8 @@ button:focus{
         }
         .image_area{
           padding-top: 100px;
-          animation-name: floating_web;
+          -webkit-animation-name: floating_web;
+                  animation-name: floating_web;
         }
       }
   }
@@ -511,6 +516,8 @@ button:focus{
             font-size: 23px;
             font-weight: 500;
             color: #ffffffa3;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
             transition: all 0.4s ease;
           }
           &:hover .icon{
@@ -543,6 +550,8 @@ button:focus{
         content: '';
         width: 10%;
         height: 3px;
+        background: -webkit-linear-gradient(252deg, rgba(25, 66, 167, 0.47) 0%, rgba(0, 212, 255, 0.493435) 100%);
+        background: -o-linear-gradient(252deg, rgba(25, 66, 167, 0.47) 0%, rgba(0, 212, 255, 0.493435) 100%);
         background: linear-gradient(198deg, rgba(25, 66, 167, 0.47) 0%, rgba(0, 212, 255, 0.493435) 100%);
         bottom: 0;
         left: 45%;
@@ -562,9 +571,13 @@ button:focus{
           font-family: $second-font;
           color: #5a5d8b;
           font-weight: 500;
+          -webkit-transition: all ease 0.5s;
+          -o-transition: all ease 0.5s;
           transition: all ease 0.5s;
         }
         .active{
+          background: -webkit-linear-gradient(252deg, rgba(25, 66, 167, 0.47) 0%, rgba(0, 212, 255, 0.493435) 100%);
+          background: -o-linear-gradient(252deg, rgba(25, 66, 167, 0.47) 0%, rgba(0, 212, 255, 0.493435) 100%);
           background: linear-gradient(198deg, rgba(25, 66, 167, 0.47) 0%, rgba(0, 212, 255, 0.493435) 100%);
           color: #fff;
           border-color: #fff
@@ -575,19 +588,28 @@ button:focus{
       .item{
         position: relative;
         border-radius: 8px;
-        box-shadow: 0px 16px 9px -15px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0px 16px 9px -15px rgba(0, 0, 0, 0.3);
+                box-shadow: 0px 16px 9px -15px rgba(0, 0, 0, 0.3);
+        -webkit-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
         transition: all ease 0.5s;
         overflow: hidden;
         img{
+          -webkit-transition: all ease 0.5s;
+          -o-transition: all ease 0.5s;
           transition: all ease 0.5s;
         }
         .overlay{
           position: absolute;
           height: 100%;
           width: 100%;
+          background: -webkit-linear-gradient(252deg, rgba(25, 66, 167, 0.47) 0%, rgba(0, 212, 255, 0.493435) 100%);
+          background: -o-linear-gradient(252deg, rgba(25, 66, 167, 0.47) 0%, rgba(0, 212, 255, 0.493435) 100%);
           background: linear-gradient(198deg, rgba(25, 66, 167, 0.47) 0%, rgba(0, 212, 255, 0.493435) 100%);
           top: 100%;
           left: 0;
+          -webkit-transition: all ease 0.5s;
+          -o-transition: all ease 0.5s;
           transition: all ease 0.5s;
 
           i{
@@ -600,13 +622,16 @@ button:focus{
         }
         &:hover{
           border-radius: 0;
-          box-shadow: 0px 15px 15px -9px rgba(0, 0, 0, 0.37)
+          -webkit-box-shadow: 0px 15px 15px -9px rgba(0, 0, 0, 0.37);
+                  box-shadow: 0px 15px 15px -9px rgba(0, 0, 0, 0.37)
         }
         &:hover .overlay{
           top:0;
         }
         &:hover img{
-          transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+              -ms-transform: scale(1.1);
+                  transform: scale(1.1);
         }
       }
       .padding-top{
@@ -670,8 +695,12 @@ button:focus{
       }
     }
     .social-icons{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: left;
+        -webkit-box-pack: left;
+            -ms-flex-pack: left;
+                justify-content: left;
         a{
           border: 1px solid #909090;
           border-radius: 50px;
@@ -681,8 +710,12 @@ button:focus{
           text-align: center;
           i{
             font-size: 30px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
             margin: 10px 0;
           }
           &:first-child{
@@ -879,6 +912,14 @@ button:focus{
    margin-top: 20px;
  }
 }
+@-webkit-keyframes floating_email{
+ 0%{
+   margin-top: 20px;
+ }
+ 100%{
+   margin-top: 0px;
+ }
+}
 @keyframes floating_email{
  0%{
    margin-top: 20px;
@@ -887,12 +928,29 @@ button:focus{
    margin-top: 0px;
  }
 }
+@-webkit-keyframes floating_social{
+ 0%{
+   margin-top: 0px;
+ }
+ 100%{
+   margin-top: 20px;
+ }
+}
 @keyframes floating_social{
  0%{
    margin-top: 0px;
  }
  100%{
    margin-top: 20px;
+ }
+}
+
+@-webkit-keyframes floating_video{
+ 0%{
+   margin-top: 20px;
+ }
+ 100%{
+   margin-top: 0px;
  }
 }
 
@@ -905,12 +963,30 @@ button:focus{
  }
 }
 
+@-webkit-keyframes floating_seo{
+ 0%{
+   margin-top: 0px;
+ }
+ 100%{
+   margin-top: 20px;
+ }
+}
+
 @keyframes floating_seo{
  0%{
    margin-top: 0px;
  }
  100%{
    margin-top: 20px;
+ }
+}
+
+@-webkit-keyframes floating_web{
+ 0%{
+   margin-top: 20px;
+ }
+ 100%{
+   margin-top: 0px;
  }
 }
 
@@ -972,6 +1048,32 @@ button:focus{
 /*showcase header*/
 
 /*who area*/
+
+@media only screen and(max-width: 438px){
+  #who{
+    .up{
+      width: 60%;
+      height: 70%;
+      top: 33%;
+      left: 20%;
+    }.down{
+      display: none;
+    }
+    .title_text{
+      padding: 40px 5px;
+      .title{
+        &::before{
+            display: none;
+        }
+          &::after{
+            display: none;
+        }
+      }
+    }
+  }
+}
+
+
 @media only screen and(max-width: 575px){
   #who{
     .up{
@@ -1201,6 +1303,14 @@ button:focus{
 #footer_area{
   p{
     text-align: center !important;
+    }
+    .social-icons{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center !important;
+          -ms-flex-pack: center !important;
+              justify-content: center !important;
     }
   }
 }
